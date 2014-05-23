@@ -1,43 +1,63 @@
-<!doctype html>
-<html lang="en" ng-app="phonecatApp">
-<img src="http://s3.amazonaws.com/codecademy-blog/assets/f3a16fb6.jpg" />
-<head>
-  <meta charset="utf-8">
-  <title>Superhero Gallery</title>
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="css/app.css">
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="js/controllers.js"></script>
-</head>
-<body ng-controller="PhoneListCtrl">
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-2">
-        <!--Sidebar content-->
-
-        Search: <input ng-model="query">
-        Sort by:
-        <select ng-model="orderProp">
-          <option value="name">Alphabetical</option>
-          <option value="age">Newest</option>
-		  <option value="-age">Oldest</option>
-        </select>
-
-      </div>
-      <div class="col-md-">
-        <!--Body content-->
-
-        <ul class="phones">
-          <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
-            <span>{{phone.name}}</span>
-            <p>{{phone.snippet}}</p>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-  </div>
-	{{orderProp}}
-</body>
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+		<title>My Photo Page</title>
+	</head>
+	<body>
+	    <table>
+	        <thead>
+	            <th>Star Wars Bingo</th>
+	        </thead>
+	        <tbody>
+    	        <tr>
+    	            <td>
+    	                <a href="http://starwars.wikia.com/wiki/Star_Wars:_Jedi_Knight:_Jedi_Academy">
+    	                    <img src="http://osx.wdfiles.com/local--files/icon:sstar-wars-jedi-knight-ii-jedi-outcast/SStar-Wars-Jedi-Knight-II-Jedi-Outcast.png">
+    	                </a>
+    	            </td>
+    	            <td>
+    	                <a href="http://starwars.wikia.com/wiki/Stormtrooper">
+    	                    <img src="http://www.iconarchive.com/download/i45721/tooschee/water-gaming/star-wars-battlefront.ico">
+    	                </a>
+    	            </td>
+    	            <td>
+    	                <a href="http://starwars.wikia.com/wiki/Clone_trooper">
+    	                    <img src="http://www.mricons.com/ajax/download/png/20781/128/iconset:star-wars-icon">
+    	                </a>
+    	            </td>
+    	        </tr>
+    	        <tr>
+    	            <td>
+    	                <a href="http://starwars.wikia.com/wiki/Mandalorian">
+    	                    <img src="http://icdn.pro/images/en/j/a/jango-fett-star-wars-icone-9528-128.png"></td>
+    	            <td>
+    	                <a href="http://starwars.wikia.com/wiki/The_Old_Republic">
+    	                    <img src="http://righteousprofit.genesis-it.net/wp-content/uploads/2013/01/Star_Wars_Icon.png"></td>
+    	            <td>
+    	                <a href="http://starwars.wikia.com/wiki/Death_Star">
+    	                    <img src="https://cdn0.iconfinder.com/data/icons/star-wars/512/death_star-128.png">
+    	                </a>
+    	            </td>
+    	        </tr>
+    	        <tr>
+    	            <td>
+    	                <a href="http://starwars.wikia.com/wiki/X-wing_starfighter">
+    	                    <img src="http://png-2.findicons.com/files/icons/512/star_wars/128/x_wing.png">
+    	                </a>
+    	            </td>
+    	            <td>
+    	                <a href="http://starwars.wikia.com/wiki/Star_Wars:_The_Force_Unleashed">
+    	                    <img src="http://files.softicons.com/download/game-icons/mega-games-pack-40-icons-by-exhumed/png/256/Star%20Wars%20-%20The%20Force%20Unleashed%202_10.png">
+    	                </a>
+    	            </td>
+    	            <td>
+    	                <a href="http://starwars.wikia.com/wiki/R2-D2">
+    	                    <img src="http://img.brothersoft.com/icon/softimage/s/star_wars_icons-436559-1292400387.jpeg">
+    	                </a>
+    	            </td>
+    	        </tr>
+	        </tbody>
+	    </table>
+	</body>
 </html>
